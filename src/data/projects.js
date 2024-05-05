@@ -1,47 +1,54 @@
 // TODO Add a couple lines about each project
 const data = [
   {
-    title: 'Nearest Dollar',
-    subtitle: '2015 BVP Hackathon',
-    image: '/images/projects/nearestdollar.jpg',
-    date: '2015-11-20',
+    title: 'JWT authentication using gRPC interceptors.',
+    subtitle: 'Golang Project',
+    image: '/images/projects/jwt.png',
+    date: '2021-11-15',
     desc:
-      'Built for a social impact hackathon. '
-      + 'NearestDollar connected to your bank accounts, credit cards, '
-      + 'or debit cards and rounded up your purchases to donate the balance to '
-      + 'the charity of your choice.',
+      'Implemented JWT based authentication using Golang. '
+      + 'The gRPC interceptor is used as a middleware to process '
+      + 'the client and server request and response to authorise and verify the JWT tokens,',
   },
   {
-    title: 'Harvest',
-    subtitle: 'Won 3rd. place in 2015 Techcrunch Disrupt SF Hackathon',
-    link: 'https://devpost.com/software/harvest',
-    image: '/images/projects/harvest.jpg',
-    date: '2015-09-20',
+    title: 'Detection of Road humps and Potholes using IoT',
+    subtitle: 'B.Tech Final Project',
+    image: '/images/projects/pothole-detection.png',
+    date: '2020-7-28',
     desc:
-      'Won ~ $7000 in prizes for an advanced, low cost monitoring solution '
-      + 'for crops. Harvest was designed to catch irrigation leaks, overwatering, '
-      + 'and nutrient deficiencies at an affordable price for the developing world.',
+      'A device to detect Road humps and potholes. '
+      + 'Implementing along with automobiles for improving transport and safety. '
+      + 'Surveying the roads for potholes and humps and have them uploaded to the map, '
+      + 'Alert the driver of irregular humps and potholes.',
   },
   {
-    title: 'Space Potato',
-    subtitle: 'A kickstarter funded potato powered weather balloon.',
-    link: 'http://www.spacepotato.org',
-    image: '/images/projects/spacepotato.jpg',
-    date: '2015-06-28',
+    title: 'Data Communication Model - Computer Graphics',
+    subtitle: 'B.Tech project',
+    image: '/images/projects/data-communication.jpg',
+    date: '2019-08-28',
     desc:
-      'Launched a potato battery powered weather balloon with two cameras '
-      + 'and gps transponder. Resulting photos were published in a coffee table book. '
-      + 'You can email me for a copy.',
+      'Built a Computer Graphics model illustrating Data Communication. '
+      + 'It illustrates concept of data communication over the internet. '
+      + 'Built Using OpenGL API and GLUT libraries.',
   },
   {
-    title: 'Cat Detector',
-    subtitle: 'A convolutional neural network to classify cats! (and dogs)',
-    image: '/images/projects/catdetector.jpg',
-    date: '2015-05-15',
+    title: 'Placement management system',
+    subtitle: 'B.Tech Project',
+    image: '/images/projects/placement.png',
+    date: '2019-12-28',
     desc:
-      'Trained a convolutional neural network to classify between ~ 80 cats breeds. '
-      + 'Over 60,000 cats were classified before server bills made the project too expensive '
-      + 'to continue hosting.',
+      'A web technology based project for placement and human resource department. '
+      + 'It involves managing, accessing and notifying users of upcoming events.',
+  },
+  {
+    title: 'Hostel Management System',
+    subtitle: 'B.Tech Project',
+    image: '/images/projects/hostel.jpg',
+    date: '2018-04-28',
+    desc:
+      'A Hostel management system using web technologies. '
+      + 'A user friendly web portal students and hostel managers. '
+      + 'It includes all the necessary funtions required for a hostel maintainance.',
   },
 ];
 

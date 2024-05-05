@@ -11,38 +11,40 @@ import References from '../components/Resume/References';
 
 import courses from '../data/resume/courses';
 import degrees from '../data/resume/degrees';
-import work from '../data/resume/work';
+import positions from '../data/resume/work';
 import { skills, categories } from '../data/resume/skills';
 
-// NOTE: sections are displayed in order defined.
-const sections = {
-  Education: () => <Education data={degrees} />,
-  Experience: () => <Experience data={work} />,
-  Skills: () => <Skills skills={skills} categories={categories} />,
-  Courses: () => <Courses data={courses} />,
-  References: () => <References />,
-};
+const sections = [
+  'Education',
+  'Experience',
+  'Skills',
+];
 
 const Resume = () => (
   <Main
     title="Resume"
-    description="Michael D'Angelo's Resume. Smile Identity, Arthena, Matroid, YC, Skeptical Investments, Stanford ICME, Planet, and Facebook."
+    description="Sachin Sadashiv's Resume."
   >
     <article className="post" id="resume">
       <header>
         <div className="title">
-          <h2><Link to="resume">Resume</Link></h2>
+          <h2 data-testid="heading"><Link to="resume">Resume</Link></h2>
+          <a style={{ marginLeft: 500, marginTop: 0 }} href="/#">Download My Resume</a>
           <div className="link-container">
-            {Object.keys(sections).map((sec) => (
+            {sections.map((sec) => (
               <h4 key={sec}>
                 <a href={`#${sec.toLowerCase()}`}>{sec}</a>
               </h4>))}
           </div>
+
         </div>
       </header>
-      {Object.entries(sections).map(([name, Section]) => (
-        <Section key={name} />
-      ))}
+      <Education data={degrees} />
+      <Experience data={positions} />
+      <Skills skills={skills} categories={categories} />
+      <Courses data={courses} />
+      <References />
+
     </article>
   </Main>
 );
